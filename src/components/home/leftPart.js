@@ -4,6 +4,8 @@ import LeftPartStyles from './style';
 
 import profilePicture from '../../assets/images/profile.jpg';
 
+import 'font-awesome/css/font-awesome.css';
+
 class LeftPart extends Component {
   render() {
     return (
@@ -17,6 +19,18 @@ class LeftPart extends Component {
                 <h2>Gustavo Chagas</h2>
                 <p>Desenvolvedor de Front-End</p>
                 <span>Americana, São Paulo, Brasil</span>
+                <a href="https://github.com/Gustavochagas" target="_blank"  rel="noopener noreferrer" className="leftpart__links">
+                  <i className="fa fa-github"></i>
+                </a>
+                <a href="mailto:gustavochagasb@gmail.com" target="_blank"  rel="noopener noreferrer" className="leftpart__links">
+                  <i className="fa fa-envelope"></i>
+                </a>
+                <a href="https://web.whatsapp.com/send?phone=5519982537760&amp" target="_blank"  rel="noopener noreferrer" className="leftpart__links">
+                  <i className="fa fa-whatsapp"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/gustavo-chagas-578706107/" target="_blank"  rel="noopener noreferrer" className="leftpart__links">
+                  <i className="fa fa-linkedin"></i>
+                </a>
             </div>
         </div>
       </Fragment>
