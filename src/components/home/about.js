@@ -18,11 +18,11 @@ class About extends Component {
 
               <div className="profile__pessoal">
                 <div>
-                  <h2 className="h2--mini">Idade:</h2>
+                  <h2 className="h2--mini">Idade</h2>
                   <span>22 Anos</span>
                 </div>
                 <div>
-                  <h2 className="h2--mini">Cidade:</h2>
+                  <h2 className="h2--mini">Cidade</h2>
                   <span>Americana/SP</span>
                 </div>
               </div>
