@@ -1,5 +1,6 @@
 import React, { Fragment, Component } from 'react';
 
+import Header from './components/header/header';
 import About from './components/home/about';
 import Scholl from './components/home/scholl';
 import Portfolio from './components/home/portfolio';
@@ -11,6 +12,7 @@ class App extends Component {
     return (
       <Fragment>
           <GlobalStyles />
+          <Header />
           <About />
           <Scholl />
           <Portfolio />
