@@ -4,6 +4,11 @@ import 'font-awesome/css/font-awesome.css';
 
 const GlobalStyles = createGlobalStyle`
     /* about styles */
+    @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,700');
+
+    * {
+        font-family: 'Poppins', sans-serif;
+    }
     .about {
         padding: 40px 0;
     }

@@ -16,7 +16,7 @@ class Portfolio extends Component {
               </div>
               <div className="portfolio__desc">
                 <h2 className="portflio__title">CASJ</h2>
-                <span className="portfolio__link">http://www.casj.com.br/</span>
+                <span className="portfolio__link">Site Institucional</span>
                 <a href="http://www.casj.com.br/" target="_blank" rel="noopener noreferrer">Acessar</a>
               </div>
             </div>
@@ -27,7 +27,7 @@ class Portfolio extends Component {
               </div>
               <div className="portfolio__desc">
                 <h2 className="portflio__title">GPTW</h2>
-                <span className="portfolio__link">https://www.gptw.com.br/</span>
+                <span className="portfolio__link">Site Institucional</span>
                 <a href="https://www.gptw.com.br/" target="_blank" rel="noopener noreferrer">Acessar</a>
               </div>
             </div>
@@ -38,7 +38,7 @@ class Portfolio extends Component {
               </div>
               <div className="portfolio__desc">
                 <h2 className="portflio__title">METROFIT</h2>
-                <span className="portfolio__link">https://www.metrofit.com.br/</span>
+                <span className="portfolio__link">Site Institucional</span>
                 <a href="https://www.metrofit.com.br/" target="_blank" rel="noopener noreferrer">Acessar</a>
               </div>
             </div>
