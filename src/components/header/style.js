@@ -5,7 +5,8 @@ import 'font-awesome/css/font-awesome.css';
 const HeaderStyles = createGlobalStyle`
   header {
     background: #000;
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
     z-index: 99;
 

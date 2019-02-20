@@ -187,6 +187,26 @@ const GlobalStyles = createGlobalStyle`
         }
     }
 
+    /* banner */
+    .banner {
+        width: 100%;
+        height: 70vh;
+        background: #000;
+
+        .content__banner {
+            display: flex;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+
+            h2 {
+                color: #fff;
+                margin: 0;
+            }
+        }
+
+    }
+
     /* medias queries */
     @media only screen and (max-width: 1024px) {
         .leftpart {
