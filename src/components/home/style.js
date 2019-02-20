@@ -10,7 +10,7 @@ const GlobalStyles = createGlobalStyle`
         font-family: 'Poppins', sans-serif;
     }
     .about {
-        padding: 40px 0;
+        padding: 70px 0;
     }
 
     .about__top {
@@ -111,7 +111,7 @@ const GlobalStyles = createGlobalStyle`
 
     .formacao {
         background: #ccc;
-        padding: 40px 0;
+        padding: 70px 0;
         width: 100%;
         text-align: center;
 
@@ -125,7 +125,7 @@ const GlobalStyles = createGlobalStyle`
 
     /* portfolio styles */
     .portfolio {
-        padding: 0px 20px;
+        padding: 70px 20px;
         width: 100%;
         display: flex;
         flex-wrap: wrap;
@@ -135,6 +135,7 @@ const GlobalStyles = createGlobalStyle`
             text-align: center;
             width: 100%;
             font-size: 40px;
+            margin-top: 0;
         }
 
         .portfolio__item {
