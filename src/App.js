@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import Header from './components/header';
+import Home from './components/home';
 
 const headerPosition = [
   { key: 'left', class: '' },
@@ -15,7 +16,7 @@ class App extends Component {
       <div className={"all " + headerPosition[0].class}>
         <Header />
         <div className="all-content">
-          <h3>Oi</h3>
+          <Home />
         </div>
       </div>
     );
