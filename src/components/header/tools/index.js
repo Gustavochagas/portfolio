@@ -1,12 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import './style.sass';
 
-function Tools({ name, icon }) {
+function Tools(props) {
+  const { name, icon } = props;
+  const [showTooltip, setShowTooltip] = useState(false);
+
+  function showTT(bool) {
+    setShowTooltip(bool);
+  }
+
 	return(
-		<li className="tool-item">
+		<li className="tool-item" onMouseEnter={() => showTT(true)} onMouseLeave={() => showTT(false)}>
 			<a href=" ">{icon}</a>
-			<span className="tooltip">{name}</span>
+      {showTooltip && <span className="tooltip">{name}</span>}
 		</li>
   );
 }
