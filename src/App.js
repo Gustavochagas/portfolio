@@ -1,26 +1,16 @@
-import React, { Fragment, Component } from 'react';
+import React, { Component } from 'react';
 
-import Header from './components/header/header';
-import Banner from './components/home/banner';
-import About from './components/home/about';
-import Scholl from './components/home/scholl';
-import Portfolio from './components/home/portfolio';
-import Footer from './components/footer/index';
-
-import GlobalStyles from './components/home/style';
+import Header from './components/header';
 
 class App extends Component {
   render() {
     return (
-      <Fragment>
-          <GlobalStyles />
-          <Header />
-          <Banner />
-          <About />
-          <Scholl />
-          <Portfolio />
-          <Footer />
-      </Fragment>
+      <div className="all">
+        <Header />
+        <div className="all-content">
+          <h3>Oi</h3>
+        </div>
+      </div>
     );
   }
 }

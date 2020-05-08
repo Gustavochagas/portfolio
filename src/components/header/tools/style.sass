@@ -1,0 +1,30 @@
+.tool-item
+	background-color: #262B32
+	border-radius: 50%
+	&:hover
+		background-color: #ccc
+		a
+			color: #262B32
+	a
+		color: #ccc
+	.tooltip
+		background-color: #262B32
+		color: #ccc
+		position: absolute
+		top: calc(50% - 12px)
+		right: -100px
+		padding: 3px 10px
+		font-size: .8rem
+		min-width: 80px
+		max-width: 80px
+		border-radius: 5px
+		&::before
+			content: ''
+			width: 0
+			height: 0
+			border-top: 5px solid transparent
+			border-bottom: 5px solid transparent
+			border-right: 5px solid #262B32
+			position: absolute
+			left: -5px
+			top: calc(50% - 5px)
