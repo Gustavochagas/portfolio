@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Backend from 'react-dnd-html5-backend';
+import { DndProvider } from 'react-dnd';
 
 import Header from './components/header';
 import Home from './components/home';
@@ -18,9 +20,11 @@ class App extends Component {
       <div className={"all " + headerPosition[0].class}>
         <Header />
         <div className="all-content">
+        <DndProvider backend={Backend}>
           <Home />
           <About />
           <Skills />
+        </DndProvider>
         </div>
       </div>
     );

@@ -2,12 +2,15 @@
 
 .skill
 	box-shadow: 0 15px 35px rgba(126, 136, 153, 0.2), 0 2px 15px rgba(126, 136, 153, 0.2)
+	background-color: $white
 	padding: 25px
 	border-radius: 15px
 	text-align: center
 	transition: all .2s ease-in-out
 	&:hover
 		box-shadow: 0 15px 35px rgba($primary, 0.4), 0 2px 15px rgba($primary, 0.4)
+	&.is-dragging
+		opacity: .3
 	.skill-image
 		svg
 			color: $primary
@@ -30,3 +33,6 @@
 	.skill-description
 		font-size: 0.9rem
 		margin: 0
+.can-change
+	.skill
+		cursor: pointer
