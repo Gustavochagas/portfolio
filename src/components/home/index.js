@@ -6,9 +6,15 @@ import Illustration from '../../assets/illustration.svg';
 
 class Home extends Component {
   render() {
+    const style = [
+      { type: 'left', class: '' },
+      { type: 'right', class: 'right' },
+      { type: 'no-image', class: 'no-image' },
+    ];
+
     return (
       <>
-        <div className="home">
+        <div className={"home " + style[0].class}>
           <div className="home-image">
             <img src={Illustration} title="Ilustration" alt="Illustration" />
           </div>
