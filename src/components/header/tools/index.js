@@ -12,7 +12,7 @@ function Tools(props) {
 
 	return(
 		<li className="tool-item" onMouseEnter={() => showTT(true)} onMouseLeave={() => showTT(false)}>
-			<a href=" ">{icon}</a>
+			<button>{icon}</button>
       {showTooltip && <span className="tooltip">{name}</span>}
 		</li>
   );
