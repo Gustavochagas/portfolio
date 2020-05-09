@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import './style.sass';
 
 import Progress from './progress';
+import BlockText from '../../commons/block-text';
 
 class About extends Component {
   render() {
@@ -16,11 +17,12 @@ class About extends Component {
     return(
       <>
         <div className="about">
-          <div className="about-content">
-            <h1 className="title">Gustavo Chagas</h1>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-            <button className="button">Contact</button>
-          </div>
+          <BlockText
+            title="Gustavo Chagas"
+            text="Hi, i'm front-end developer with +4y agile development experience."
+            actionTitle="Contact"
+            direction="left"
+          />
           <div className="about-progress">
             {skills.map((skill, index) =>
               <Progress key={index} name={skill.name} status={skill.status} />

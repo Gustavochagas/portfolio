@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import './style.sass';
 
 import Illustration from '../../assets/illustration.svg';
+import BlockText from '../../commons/block-text';
 
 class Home extends Component {
   render() {
@@ -18,11 +19,12 @@ class Home extends Component {
           <div className="home-image">
             <img src={Illustration} title="Ilustration" alt="Illustration" />
           </div>
-          <div className="home-content">
-            <h1 className="title">Frontend developer</h1>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-            <button className="button">Contact</button>
-          </div>
+          <BlockText
+            title="Frontend Developer"
+            text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            actionTitle="Contact"
+            direction="right"
+          />
         </div>
       </>
     )
