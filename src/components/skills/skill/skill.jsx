@@ -5,7 +5,7 @@ import './style.sass';
 const Card = ({ id, text, title, icon, canChange, moveCard, findCard }) => {
   const originalIndex = findCard(id).index
   const [{ isDragging }, drag] = useDrag({
-    item: { type: 'card', id, originalIndex },
+    item: { type: 'skill', id, originalIndex },
     collect: (monitor) => ({
       isDragging: monitor.isDragging(),
     }),
@@ -19,7 +19,7 @@ const Card = ({ id, text, title, icon, canChange, moveCard, findCard }) => {
     canDrag: canChange,
   })
   const [, drop] = useDrop({
-    accept: 'card',
+    accept: 'skill',
     canDrop: () => false,
     hover({ id: draggedId }) {
       if (draggedId !== id) {
