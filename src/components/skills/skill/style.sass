@@ -7,10 +7,16 @@
 	border-radius: 15px
 	text-align: center
 	transition: all .2s ease-in-out
-	&:hover
-		box-shadow: 0 15px 35px rgba($primary, 0.4), 0 2px 15px rgba($primary, 0.4)
+	transform: scale(0.9)
 	&.is-dragging
 		opacity: .3
+		.skill-image
+			svg
+				color: $gray
+		.skill-title
+			color: $gray
+			&:after
+				background-color: $gray
 	.skill-image
 		svg
 			color: $primary
@@ -36,3 +42,5 @@
 .can-change
 	.skill
 		cursor: pointer
+		box-shadow: 0 15px 35px rgba($primary, 0.5), 0 2px 15px rgba($primary, 0.5)
+		transform: scale(1)

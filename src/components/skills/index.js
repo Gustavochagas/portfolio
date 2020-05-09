@@ -59,16 +59,11 @@ const Skills = () => {
   const [, drop] = useDrop({ accept: 'skill' })
 
   const settings = [
-    { key: 'cant-change', title: 'No Change Position' },
-    { key: 'can-change', title: 'Change Position' },
+    { key: 'can-change', title: !showChange ? 'Change Position' : 'Save Positions' },
   ]
 
-  function changeView(key) {
-    if (key === 'can-change') {
-      setShowChange(true);
-    } else {
-      setShowChange(false);
-    }
+  function changeView() {
+    setShowChange(!showChange);
   }
 
   return (
@@ -95,9 +90,6 @@ const Skills = () => {
           />
         ))}
       </div>
-      {showChange &&
-        <p>Now you can change the positions.</p>
-      }
     </div>
   )
 }
