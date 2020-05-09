@@ -1,15 +1,15 @@
+@import '../../../assets/styles/colors';
+
 .tool-item
-	background-color: #262B32
+	background-color: $secondary
 	border-radius: 50%
 	&:hover
-		background-color: #ccc
-		a
-			color: #262B32
+		background-color: $primary
 	a
-		color: #ccc
+		color: $gray
 	.tooltip
-		background-color: #262B32
-		color: #ccc
+		background-color: $primary
+		color: $white
 		position: absolute
 		top: calc(50% - 12px)
 		right: -100px
@@ -24,7 +24,7 @@
 			height: 0
 			border-top: 5px solid transparent
 			border-bottom: 5px solid transparent
-			border-right: 5px solid #262B32
+			border-right: 5px solid $primary
 			position: absolute
 			left: -5px
 			top: calc(50% - 5px)

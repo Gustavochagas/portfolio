@@ -1,3 +1,5 @@
+@import 'assets/styles/colors';
+
 body
   margin: 0
   padding: 0
@@ -34,6 +36,31 @@ code
 	overflow: hidden
 	z-index: 0
 
+.title
+	margin: 0
+	margin-bottom: 15px
+	line-height: 1.2
+	color: $primary
+
+.button
+	cursor: pointer
+	background-color: $primary
+	border: 0
+	color: $white
+	padding: 10px 30px
+	font-size: 1rem
+	border-radius: 10px
+	display: flex
+	width: fit-content
+	text-transform: uppercase
+	transition: all .2s ease-in-out
+	margin-top: 20px
+	outline: none
+	&:hover
+		opacity: .8
+
+p
+	line-height: 1.6
 
 // params header
 .all.header-right

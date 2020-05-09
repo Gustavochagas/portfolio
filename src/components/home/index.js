@@ -19,9 +19,9 @@ class Home extends Component {
             <img src={Illustration} title="Ilustration" alt="Illustration" />
           </div>
           <div className="home-content">
-            <h1>Frontend developer</h1>
+            <h1 className="title">Frontend developer</h1>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-            <button>Contact</button>
+            <button className="button">Contact</button>
           </div>
         </div>
       </>

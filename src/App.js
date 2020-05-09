@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import Header from './components/header';
 import Home from './components/home';
+import About from './components/about';
 
 const headerPosition = [
   { key: 'left', class: '' },
@@ -17,6 +18,7 @@ class App extends Component {
         <Header />
         <div className="all-content">
           <Home />
+          <About />
         </div>
       </div>
     );
