@@ -7,7 +7,9 @@ import Illustration from '../../assets/illustration.svg';
 import BlockText from '../../commons/block-text';
 import Settings from '../../commons/settings';
 
-function Home() {
+function Home(props) {
+  const { openModal } = props;
+
   const style = [
     { type: 'left', class: '' },
     { type: 'right', class: 'right' },
@@ -44,6 +46,7 @@ function Home() {
           text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry."
           actionTitle="Contact"
           direction="right"
+          openModal={openModal}
         />
       </div>
     </>
