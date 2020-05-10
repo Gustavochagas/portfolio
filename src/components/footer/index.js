@@ -11,11 +11,11 @@ function Footer() {
   ]
 
   return(
-    <div className="footer">
+    <div className="footer" id="contact">
       <h1 className="title text-center">Contact</h1>
       <div className="socials">
-        {socials.map(social =>
-          <a href={social.link} target="_blank" rel="noopener noreferrer" className="social-item">{social.icon}</a>
+        {socials.map((social, index) =>
+          <a key={index} href={social.link} target="_blank" rel="noopener noreferrer" className="social-item">{social.icon}</a>
         )}
       </div>
     </div>

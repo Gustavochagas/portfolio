@@ -31,7 +31,7 @@ function Home(props) {
 
   return (
     <>
-      <div className={"home " + activeClass}>
+      <div className={"home " + activeClass} id="home">
         <Settings
           key="home"
           position="right"

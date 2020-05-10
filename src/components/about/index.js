@@ -18,7 +18,7 @@ function About(props) {
 
   return(
     <>
-      <div className="about">
+      <div className="about" id="about">
         <BlockText
           title="Gustavo Chagas"
           text="Hi, i'm front-end developer with +4y agile development experience."

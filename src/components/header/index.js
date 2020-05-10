@@ -9,10 +9,10 @@ import Socials from './socials';
 
 function Header() {
   const tools = [
-    { icon: <MdHome />, name: 'Home' },
-    { icon: <MdFace />, name: 'About' },
-    { icon: <MdSchool />, name: 'Skills' },
-    { icon: <MdContacts />, name: 'Contact' },
+    { icon: <MdHome />, name: 'Home', key: 'home' },
+    { icon: <MdFace />, name: 'About', key: 'about' },
+    { icon: <MdSchool />, name: 'Skills', key: 'skills' },
+    { icon: <MdContacts />, name: 'Contact', key: 'contact' },
   ];
 
   const socials = [
@@ -29,7 +29,7 @@ function Header() {
         </div>
         <ul className="tools">
           { tools.map((tool, index) =>
-            <Tools key={index} name={tool.name} icon={tool.icon}  />
+            <Tools key={index} name={tool.name} icon={tool.icon} id={tool.key} />
           ) }
         </ul>
         <div className="socials">
