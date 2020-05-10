@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react';
+import React, { useState } from 'react';
 import Backend from 'react-dnd-html5-backend';
 import { DndProvider } from 'react-dnd';
 
@@ -6,6 +6,7 @@ import Header from './components/header';
 import Home from './components/home';
 import About from './components/about';
 import Skills from './components/skills';
+import Footer from './components/footer';
 
 import Modal from './commons/modal';
 
@@ -40,8 +41,11 @@ function App() {
         <Home
           openModal={openModal}
         />
-        <About />
+        <About
+          openModal={openModal}
+        />
         <Skills />
+        <Footer />
       </DndProvider>
       </div>
     </div>

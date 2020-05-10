@@ -1,3 +1,7 @@
+# Frontend Portfolio
+
+In the project was used `react-dnd` and `react-dnd-html5-backend` to make drag & drop, was used `react-icons` to get icons.
+
 ## Available Scripts
 
 ### `yarn install`

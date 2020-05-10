@@ -8,31 +8,12 @@ import Settings from '../../commons/settings';
 import './style.sass';
 
 const SKILLS = [
-  {
-    id: 1,
-    title: 'My skill',
-    text: 'Write a cool JS library',
-    icon: <FaRegThumbsUp />
-  },
-  {
-    id: 2,
-    title: 'My other skill',
-    text: 'Make it generic enough',
-    icon: <FaRegHeart />
-  },
-  {
-    id: 3,
-    title: 'Hello world',
-    text: 'Write README',
-    icon: <FaYinYang />
-  },
-  {
-    id: 4,
-    title: 'Other example',
-    text: 'Create some examples',
-    icon: <FaUserGraduate />
-  },
-]
+  { id: 1, title: 'My skill', text: 'Write a cool JS library', icon: <FaRegThumbsUp /> },
+  { id: 2, title: 'My other skill', text: 'Make it generic enough', icon: <FaRegHeart /> },
+  { id: 3, title: 'Hello world', text: 'Write README', icon: <FaYinYang /> },
+  { id: 4, title: 'Other example', text: 'Create some examples', icon: <FaUserGraduate /> },
+];
+
 const Skills = () => {
   const [skills, setSkills] = useState(SKILLS);
   const [showChange, setShowChange] = useState(false);
